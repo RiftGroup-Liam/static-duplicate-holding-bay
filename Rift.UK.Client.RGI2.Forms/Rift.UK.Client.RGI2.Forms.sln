@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rift.UK.Client.RGI2.Forms", "Rift.UK.Client.RGI2.Forms.csproj", "{E0793AFE-823D-46FF-8BC8-720C3C97DD11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rift.UK.Client.RGI2.UIControl", "..\Rift.UK.Client.RGI2.UIControl\Rift.UK.Client.RGI2.UIControl.csproj", "{602F17F9-7993-4A00-91B6-2D4BA717DB94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rift.UK.Client.RGI2.Connector", "..\Rift.UK.Client.RGI2.Connector\Rift.UK.Client.RGI2.Connector.csproj", "{1D78D84F-A220-4390-9E83-3E95349B6E5F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://rift-dev-2k8:8080/tfs/rgi2
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Rift.UK.Client.RGI2.Connector\\Rift.UK.Client.RGI2.Connector.csproj
+		SccProjectName1 = ../Rift.UK.Client.RGI2.Connector
+		SccLocalPath1 = ..\\Rift.UK.Client.RGI2.Connector
+		SccProjectUniqueName2 = Rift.UK.Client.RGI2.Forms.csproj
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = ..\\Rift.UK.Client.RGI2.UIControl\\Rift.UK.Client.RGI2.UIControl.csproj
+		SccProjectName3 = ../Rift.UK.Client.RGI2.UIControl
+		SccLocalPath3 = ..\\Rift.UK.Client.RGI2.UIControl
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Debug|Any CPU.Build.0 = Debug|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Debug|x86.ActiveCfg = Debug|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Debug|x86.Build.0 = Debug|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Release|Any CPU.ActiveCfg = Release|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Release|x86.ActiveCfg = Release|x86
+		{E0793AFE-823D-46FF-8BC8-720C3C97DD11}.Release|x86.Build.0 = Release|x86
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Debug|x86.Build.0 = Debug|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{602F17F9-7993-4A00-91B6-2D4BA717DB94}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Debug|x86.Build.0 = Debug|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1D78D84F-A220-4390-9E83-3E95349B6E5F}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

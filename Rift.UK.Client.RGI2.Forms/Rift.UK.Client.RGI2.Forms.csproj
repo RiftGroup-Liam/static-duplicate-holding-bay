@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0793AFE-823D-46FF-8BC8-720C3C97DD11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rift.UK.Client.RGI2.Forms</RootNamespace>
+    <AssemblyName>Rift.UK.Client.RGI2.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Rift.UK.Core.RGI2.REO">
+      <HintPath>..\..\Core\Rift.UK.Core.RGI2.REO\bin\Debug\Rift.UK.Core.RGI2.REO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous Forms\AreYouSureMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous Forms\AreYouSureMessageBox.Designer.cs">
+      <DependentUpon>AreYouSureMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous Forms\RiftIdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous Forms\RiftIdForm.Designer.cs">
+      <DependentUpon>RiftIdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Controls\PossibleDuplicateDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel Controls\PossibleDuplicateDetails.Designer.cs">
+      <DependentUpon>PossibleDuplicateDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Controls\PossibleDuplicateList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel Controls\PossibleDuplicateList.Designer.cs">
+      <DependentUpon>PossibleDuplicateList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Controls\PossibleDuplicateOn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel Controls\PossibleDuplicateOn.Designer.cs">
+      <DependentUpon>PossibleDuplicateOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous Forms\AreYouSureMessageBox.resx">
+      <DependentUpon>AreYouSureMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous Forms\RiftIdForm.resx">
+      <DependentUpon>RiftIdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel Controls\PossibleDuplicateDetails.resx">
+      <DependentUpon>PossibleDuplicateDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel Controls\PossibleDuplicateList.resx">
+      <DependentUpon>PossibleDuplicateList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel Controls\PossibleDuplicateOn.resx">
+      <DependentUpon>PossibleDuplicateOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rift.UK.Client.RGI2.UIControl\Rift.UK.Client.RGI2.UIControl.csproj">
+      <Project>{602F17F9-7993-4A00-91B6-2D4BA717DB94}</Project>
+      <Name>Rift.UK.Client.RGI2.UIControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
