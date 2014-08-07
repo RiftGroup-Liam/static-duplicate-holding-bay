@@ -39,7 +39,7 @@
       <HintPath>..\..\..\Core\Rift.UK.Core\Lib\Rift.UK.Core.Lib\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Rift.UK.Core.RGI2.REO">
-      <HintPath>..\..\Core\Rift.UK.Core.RGI2.REO\bin\Debug\Rift.UK.Core.RGI2.REO.dll</HintPath>
+      <HintPath>..\..\RGI2 Core\Rift.UK.Core.RGI2.REO\bin\Debug\Rift.UK.Core.RGI2.REO.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
