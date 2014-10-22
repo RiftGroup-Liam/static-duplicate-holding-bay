@@ -40,7 +40,7 @@
             // 
             // btnImport
             // 
-            this.btnImport.Location = new System.Drawing.Point(988, 585);
+            this.btnImport.Location = new System.Drawing.Point(983, 624);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(134, 23);
             this.btnImport.TabIndex = 3;
@@ -50,7 +50,7 @@
             // 
             // btnCreateHistoryRecord
             // 
-            this.btnCreateHistoryRecord.Location = new System.Drawing.Point(988, 614);
+            this.btnCreateHistoryRecord.Location = new System.Drawing.Point(983, 653);
             this.btnCreateHistoryRecord.Name = "btnCreateHistoryRecord";
             this.btnCreateHistoryRecord.Size = new System.Drawing.Size(134, 23);
             this.btnCreateHistoryRecord.TabIndex = 4;
@@ -60,7 +60,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(988, 556);
+            this.btnDelete.Location = new System.Drawing.Point(983, 595);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(134, 23);
             this.btnDelete.TabIndex = 5;
@@ -101,7 +101,7 @@
             // 
             this.PDDetails.Location = new System.Drawing.Point(248, 13);
             this.PDDetails.Name = "PDDetails";
-            this.PDDetails.Size = new System.Drawing.Size(874, 621);
+            this.PDDetails.Size = new System.Drawing.Size(874, 650);
             this.PDDetails.TabIndex = 1;
             // 
             // PDList
@@ -116,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 646);
+            this.ClientSize = new System.Drawing.Size(1124, 688);
             this.Controls.Add(this.lblPaginationInformation);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrevious);
@@ -125,8 +125,7 @@
             this.Controls.Add(this.btnImport);
             this.Controls.Add(this.PDDetails);
             this.Controls.Add(this.PDList);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximumSize = new System.Drawing.Size(1140, 674);
+            this.MaximumSize = new System.Drawing.Size(1140, 774);
             this.MinimumSize = new System.Drawing.Size(1140, 674);
             this.Name = "MainForm";
             this.Text = "Goldmine Importer Possible Duplicates";

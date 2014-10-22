@@ -53,7 +53,7 @@ namespace Rift.UK.Client.RGI2.Forms
             if (panelControl.PossibleDuplicates.Count != 0)
             {
                 dgvPossibleDuplicates.DataSource = null;
-                dgvPossibleDuplicates.DataSource = panelControl.PossibleDuplicates;
+                dgvPossibleDuplicates.DataSource = panelControl.PossibleDuplicates.OrderByDescending(X=>X.Created).ToList();
             }
             else
             {

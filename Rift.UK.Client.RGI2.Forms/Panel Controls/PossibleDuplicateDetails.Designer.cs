@@ -83,6 +83,8 @@
             this.cbPhone2Match = new System.Windows.Forms.CheckBox();
             this.cbPhone1Match = new System.Windows.Forms.CheckBox();
             this.lblPossibleDuplicateOnHeader = new System.Windows.Forms.Label();
+            this.txtCreatedDate = new System.Windows.Forms.TextBox();
+            this.lblCreatedDate = new System.Windows.Forms.Label();
             this.gbRepExtraDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -242,7 +244,7 @@
             this.gbRepExtraDetails.Controls.Add(this.lblNoOfYears);
             this.gbRepExtraDetails.Controls.Add(this.lblTransport);
             this.gbRepExtraDetails.Controls.Add(this.lblFullyQualified);
-            this.gbRepExtraDetails.Location = new System.Drawing.Point(8, 335);
+            this.gbRepExtraDetails.Location = new System.Drawing.Point(8, 353);
             this.gbRepExtraDetails.Name = "gbRepExtraDetails";
             this.gbRepExtraDetails.Size = new System.Drawing.Size(720, 287);
             this.gbRepExtraDetails.TabIndex = 15;
@@ -603,10 +605,29 @@
             this.lblPossibleDuplicateOnHeader.TabIndex = 32;
             this.lblPossibleDuplicateOnHeader.Text = "Possible duplicate On:";
             // 
+            // txtCreatedDate
+            // 
+            this.txtCreatedDate.Location = new System.Drawing.Point(117, 323);
+            this.txtCreatedDate.Name = "txtCreatedDate";
+            this.txtCreatedDate.ReadOnly = true;
+            this.txtCreatedDate.Size = new System.Drawing.Size(246, 20);
+            this.txtCreatedDate.TabIndex = 38;
+            // 
+            // lblCreatedDate
+            // 
+            this.lblCreatedDate.AutoSize = true;
+            this.lblCreatedDate.Location = new System.Drawing.Point(5, 324);
+            this.lblCreatedDate.Name = "lblCreatedDate";
+            this.lblCreatedDate.Size = new System.Drawing.Size(73, 13);
+            this.lblCreatedDate.TabIndex = 37;
+            this.lblCreatedDate.Text = "Created Date:";
+            // 
             // PossibleDuplicateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtCreatedDate);
+            this.Controls.Add(this.lblCreatedDate);
             this.Controls.Add(this.cbPostCodeMatch);
             this.Controls.Add(this.cbEmailMatch);
             this.Controls.Add(this.cbPhone2Match);
@@ -644,7 +665,7 @@
             this.Controls.Add(this.lblDear);
             this.Controls.Add(this.lblId);
             this.Name = "PossibleDuplicateDetails";
-            this.Size = new System.Drawing.Size(899, 625);
+            this.Size = new System.Drawing.Size(899, 653);
             this.gbRepExtraDetails.ResumeLayout(false);
             this.gbRepExtraDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -709,5 +730,7 @@
         private System.Windows.Forms.TextBox txtReceivedDate;
         private System.Windows.Forms.TextBox txtRepName;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCreatedDate;
+        private System.Windows.Forms.Label lblCreatedDate;
     }
 }

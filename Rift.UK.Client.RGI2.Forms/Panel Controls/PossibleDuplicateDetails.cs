@@ -221,12 +221,13 @@ namespace Rift.UK.Client.RGI2.Forms
                 txtCOUNTRY.Text = gMPossibleDuplicate.COUNTRY;
                 txtCITY.Text = gMPossibleDuplicate.CITY;
                 txtAreaOfEmployment.Text = gMPossibleDuplicate.TITLE;
+                txtCreatedDate.Text = gMPossibleDuplicate.Created.ToString();
             }
         }
 
         private void SetREPDetailsGroupBoxVisibility(GMPossibleDuplicate gMPossibleDuplicate)
         {
-            if (gMPossibleDuplicate.REPemail == 1)
+            if (gMPossibleDuplicate.EmailTypeEnum == EmailEnums.EmailType.Rep)
             {
                 gbRepExtraDetails.Visible = true;
             }

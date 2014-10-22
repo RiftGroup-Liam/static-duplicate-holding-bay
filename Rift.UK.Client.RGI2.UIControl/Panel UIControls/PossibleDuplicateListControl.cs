@@ -29,6 +29,7 @@ namespace Rift.UK.Client.RGI2.UIControl
         public void RetrieveList(int recordCounter)
         {
             this.possibleDuplicates = goldmineImportServiceConnector.GetPossibleDuplicates(recordCounter);
+            this.possibleDuplicates = this.possibleDuplicates.OrderByDescending(X => X.Created).ToList();
             PossibleDuplicatesListUpdated();
         }
 
