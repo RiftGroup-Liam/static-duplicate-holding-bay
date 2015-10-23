@@ -222,6 +222,7 @@ namespace Rift.UK.Client.RGI2.Forms
                 txtCITY.Text = gMPossibleDuplicate.CITY;
                 txtAreaOfEmployment.Text = gMPossibleDuplicate.TITLE;
                 txtCreatedDate.Text = gMPossibleDuplicate.Created.ToString();
+                txtCallTime.Text = gMPossibleDuplicate.CallTime;
             }
         }
 
@@ -297,6 +298,11 @@ namespace Rift.UK.Client.RGI2.Forms
         private void HideREPDetailsGroupBoxVisibility()
         {
             gbRepExtraDetails.Visible = false;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

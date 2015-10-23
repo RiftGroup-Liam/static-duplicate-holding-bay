@@ -85,6 +85,8 @@
             this.lblPossibleDuplicateOnHeader = new System.Windows.Forms.Label();
             this.txtCreatedDate = new System.Windows.Forms.TextBox();
             this.lblCreatedDate = new System.Windows.Forms.Label();
+            this.txtCallTime = new System.Windows.Forms.TextBox();
+            this.lblCallTime = new System.Windows.Forms.Label();
             this.gbRepExtraDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -244,7 +246,7 @@
             this.gbRepExtraDetails.Controls.Add(this.lblNoOfYears);
             this.gbRepExtraDetails.Controls.Add(this.lblTransport);
             this.gbRepExtraDetails.Controls.Add(this.lblFullyQualified);
-            this.gbRepExtraDetails.Location = new System.Drawing.Point(8, 353);
+            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 375);
             this.gbRepExtraDetails.Name = "gbRepExtraDetails";
             this.gbRepExtraDetails.Size = new System.Drawing.Size(720, 287);
             this.gbRepExtraDetails.TabIndex = 15;
@@ -622,10 +624,30 @@
             this.lblCreatedDate.TabIndex = 37;
             this.lblCreatedDate.Text = "Created Date:";
             // 
+            // txtCallTime
+            // 
+            this.txtCallTime.Location = new System.Drawing.Point(117, 349);
+            this.txtCallTime.Name = "txtCallTime";
+            this.txtCallTime.ReadOnly = true;
+            this.txtCallTime.Size = new System.Drawing.Size(246, 20);
+            this.txtCallTime.TabIndex = 40;
+            // 
+            // lblCallTime
+            // 
+            this.lblCallTime.AutoSize = true;
+            this.lblCallTime.Location = new System.Drawing.Point(5, 350);
+            this.lblCallTime.Name = "lblCallTime";
+            this.lblCallTime.Size = new System.Drawing.Size(53, 13);
+            this.lblCallTime.TabIndex = 39;
+            this.lblCallTime.Text = "Call Time:";
+            this.lblCallTime.Click += new System.EventHandler(this.label3_Click);
+            // 
             // PossibleDuplicateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtCallTime);
+            this.Controls.Add(this.lblCallTime);
             this.Controls.Add(this.txtCreatedDate);
             this.Controls.Add(this.lblCreatedDate);
             this.Controls.Add(this.cbPostCodeMatch);
@@ -665,7 +687,7 @@
             this.Controls.Add(this.lblDear);
             this.Controls.Add(this.lblId);
             this.Name = "PossibleDuplicateDetails";
-            this.Size = new System.Drawing.Size(899, 653);
+            this.Size = new System.Drawing.Size(899, 687);
             this.gbRepExtraDetails.ResumeLayout(false);
             this.gbRepExtraDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -732,5 +754,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCreatedDate;
         private System.Windows.Forms.Label lblCreatedDate;
+        private System.Windows.Forms.TextBox txtCallTime;
+        private System.Windows.Forms.Label lblCallTime;
     }
 }
