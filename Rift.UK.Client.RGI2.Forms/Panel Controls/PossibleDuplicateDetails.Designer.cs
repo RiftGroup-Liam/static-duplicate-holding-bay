@@ -87,6 +87,10 @@
             this.lblCreatedDate = new System.Windows.Forms.Label();
             this.txtCallTime = new System.Windows.Forms.TextBox();
             this.lblCallTime = new System.Windows.Forms.Label();
+            this.txtSector = new System.Windows.Forms.TextBox();
+            this.lblSector = new System.Windows.Forms.Label();
+            this.txtGrade = new System.Windows.Forms.TextBox();
+            this.lblGrade = new System.Windows.Forms.Label();
             this.gbRepExtraDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -246,7 +250,7 @@
             this.gbRepExtraDetails.Controls.Add(this.lblNoOfYears);
             this.gbRepExtraDetails.Controls.Add(this.lblTransport);
             this.gbRepExtraDetails.Controls.Add(this.lblFullyQualified);
-            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 375);
+            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 430);
             this.gbRepExtraDetails.Name = "gbRepExtraDetails";
             this.gbRepExtraDetails.Size = new System.Drawing.Size(720, 287);
             this.gbRepExtraDetails.TabIndex = 15;
@@ -640,12 +644,49 @@
             this.lblCallTime.Size = new System.Drawing.Size(53, 13);
             this.lblCallTime.TabIndex = 39;
             this.lblCallTime.Text = "Call Time:";
-            this.lblCallTime.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txtSector
+            // 
+            this.txtSector.Location = new System.Drawing.Point(118, 375);
+            this.txtSector.Name = "txtSector";
+            this.txtSector.ReadOnly = true;
+            this.txtSector.Size = new System.Drawing.Size(246, 20);
+            this.txtSector.TabIndex = 42;
+            // 
+            // lblSector
+            // 
+            this.lblSector.AutoSize = true;
+            this.lblSector.Location = new System.Drawing.Point(6, 376);
+            this.lblSector.Name = "lblSector";
+            this.lblSector.Size = new System.Drawing.Size(30, 13);
+            this.lblSector.TabIndex = 41;
+            this.lblSector.Text = "Title:";
+            // 
+            // txtGrade
+            // 
+            this.txtGrade.Location = new System.Drawing.Point(118, 401);
+            this.txtGrade.Name = "txtGrade";
+            this.txtGrade.ReadOnly = true;
+            this.txtGrade.Size = new System.Drawing.Size(246, 20);
+            this.txtGrade.TabIndex = 44;
+            // 
+            // lblGrade
+            // 
+            this.lblGrade.AutoSize = true;
+            this.lblGrade.Location = new System.Drawing.Point(6, 402);
+            this.lblGrade.Name = "lblGrade";
+            this.lblGrade.Size = new System.Drawing.Size(39, 13);
+            this.lblGrade.TabIndex = 43;
+            this.lblGrade.Text = "Grade:";
             // 
             // PossibleDuplicateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtGrade);
+            this.Controls.Add(this.lblGrade);
+            this.Controls.Add(this.txtSector);
+            this.Controls.Add(this.lblSector);
             this.Controls.Add(this.txtCallTime);
             this.Controls.Add(this.lblCallTime);
             this.Controls.Add(this.txtCreatedDate);
@@ -687,7 +728,7 @@
             this.Controls.Add(this.lblDear);
             this.Controls.Add(this.lblId);
             this.Name = "PossibleDuplicateDetails";
-            this.Size = new System.Drawing.Size(899, 687);
+            this.Size = new System.Drawing.Size(899, 733);
             this.gbRepExtraDetails.ResumeLayout(false);
             this.gbRepExtraDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -756,5 +797,9 @@
         private System.Windows.Forms.Label lblCreatedDate;
         private System.Windows.Forms.TextBox txtCallTime;
         private System.Windows.Forms.Label lblCallTime;
+        private System.Windows.Forms.TextBox txtSector;
+        private System.Windows.Forms.Label lblSector;
+        private System.Windows.Forms.TextBox txtGrade;
+        private System.Windows.Forms.Label lblGrade;
     }
 }
