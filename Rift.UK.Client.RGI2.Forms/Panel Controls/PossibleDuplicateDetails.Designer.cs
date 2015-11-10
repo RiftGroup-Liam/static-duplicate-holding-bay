@@ -76,8 +76,6 @@
             this.txtCOUNTRY = new System.Windows.Forms.TextBox();
             this.txtCITY = new System.Windows.Forms.TextBox();
             this.txtComments = new System.Windows.Forms.TextBox();
-            this.txtAreaOfEmployment = new System.Windows.Forms.TextBox();
-            this.lblAreaOfEmployment = new System.Windows.Forms.Label();
             this.cbPostCodeMatch = new System.Windows.Forms.CheckBox();
             this.cbEmailMatch = new System.Windows.Forms.CheckBox();
             this.cbPhone2Match = new System.Windows.Forms.CheckBox();
@@ -87,10 +85,10 @@
             this.lblCreatedDate = new System.Windows.Forms.Label();
             this.txtCallTime = new System.Windows.Forms.TextBox();
             this.lblCallTime = new System.Windows.Forms.Label();
+            this.txtEmploymentStatus = new System.Windows.Forms.TextBox();
+            this.lblEmploymentStatus = new System.Windows.Forms.Label();
             this.txtSector = new System.Windows.Forms.TextBox();
             this.lblSector = new System.Windows.Forms.Label();
-            this.txtGrade = new System.Windows.Forms.TextBox();
-            this.lblGrade = new System.Windows.Forms.Label();
             this.gbRepExtraDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -250,7 +248,7 @@
             this.gbRepExtraDetails.Controls.Add(this.lblNoOfYears);
             this.gbRepExtraDetails.Controls.Add(this.lblTransport);
             this.gbRepExtraDetails.Controls.Add(this.lblFullyQualified);
-            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 430);
+            this.gbRepExtraDetails.Location = new System.Drawing.Point(7, 404);
             this.gbRepExtraDetails.Name = "gbRepExtraDetails";
             this.gbRepExtraDetails.Size = new System.Drawing.Size(720, 287);
             this.gbRepExtraDetails.TabIndex = 15;
@@ -540,23 +538,6 @@
             this.txtComments.Size = new System.Drawing.Size(271, 316);
             this.txtComments.TabIndex = 29;
             // 
-            // txtAreaOfEmployment
-            // 
-            this.txtAreaOfEmployment.Location = new System.Drawing.Point(117, 297);
-            this.txtAreaOfEmployment.Name = "txtAreaOfEmployment";
-            this.txtAreaOfEmployment.ReadOnly = true;
-            this.txtAreaOfEmployment.Size = new System.Drawing.Size(246, 20);
-            this.txtAreaOfEmployment.TabIndex = 31;
-            // 
-            // lblAreaOfEmployment
-            // 
-            this.lblAreaOfEmployment.AutoSize = true;
-            this.lblAreaOfEmployment.Location = new System.Drawing.Point(5, 298);
-            this.lblAreaOfEmployment.Name = "lblAreaOfEmployment";
-            this.lblAreaOfEmployment.Size = new System.Drawing.Size(106, 13);
-            this.lblAreaOfEmployment.TabIndex = 30;
-            this.lblAreaOfEmployment.Text = "Area Of Employment:";
-            // 
             // cbPostCodeMatch
             // 
             this.cbPostCodeMatch.AutoCheck = false;
@@ -613,7 +594,7 @@
             // 
             // txtCreatedDate
             // 
-            this.txtCreatedDate.Location = new System.Drawing.Point(117, 323);
+            this.txtCreatedDate.Location = new System.Drawing.Point(118, 352);
             this.txtCreatedDate.Name = "txtCreatedDate";
             this.txtCreatedDate.ReadOnly = true;
             this.txtCreatedDate.Size = new System.Drawing.Size(246, 20);
@@ -622,7 +603,7 @@
             // lblCreatedDate
             // 
             this.lblCreatedDate.AutoSize = true;
-            this.lblCreatedDate.Location = new System.Drawing.Point(5, 324);
+            this.lblCreatedDate.Location = new System.Drawing.Point(6, 353);
             this.lblCreatedDate.Name = "lblCreatedDate";
             this.lblCreatedDate.Size = new System.Drawing.Size(73, 13);
             this.lblCreatedDate.TabIndex = 37;
@@ -630,7 +611,7 @@
             // 
             // txtCallTime
             // 
-            this.txtCallTime.Location = new System.Drawing.Point(117, 349);
+            this.txtCallTime.Location = new System.Drawing.Point(118, 378);
             this.txtCallTime.Name = "txtCallTime";
             this.txtCallTime.ReadOnly = true;
             this.txtCallTime.Size = new System.Drawing.Size(246, 20);
@@ -639,54 +620,54 @@
             // lblCallTime
             // 
             this.lblCallTime.AutoSize = true;
-            this.lblCallTime.Location = new System.Drawing.Point(5, 350);
+            this.lblCallTime.Location = new System.Drawing.Point(6, 379);
             this.lblCallTime.Name = "lblCallTime";
             this.lblCallTime.Size = new System.Drawing.Size(53, 13);
             this.lblCallTime.TabIndex = 39;
             this.lblCallTime.Text = "Call Time:";
             // 
+            // txtEmploymentStatus
+            // 
+            this.txtEmploymentStatus.Location = new System.Drawing.Point(117, 300);
+            this.txtEmploymentStatus.Name = "txtEmploymentStatus";
+            this.txtEmploymentStatus.ReadOnly = true;
+            this.txtEmploymentStatus.Size = new System.Drawing.Size(246, 20);
+            this.txtEmploymentStatus.TabIndex = 42;
+            // 
+            // lblEmploymentStatus
+            // 
+            this.lblEmploymentStatus.AutoSize = true;
+            this.lblEmploymentStatus.Location = new System.Drawing.Point(5, 301);
+            this.lblEmploymentStatus.Name = "lblEmploymentStatus";
+            this.lblEmploymentStatus.Size = new System.Drawing.Size(100, 13);
+            this.lblEmploymentStatus.TabIndex = 41;
+            this.lblEmploymentStatus.Text = "Employment Status:";
+            // 
             // txtSector
             // 
-            this.txtSector.Location = new System.Drawing.Point(118, 375);
+            this.txtSector.Location = new System.Drawing.Point(117, 326);
             this.txtSector.Name = "txtSector";
             this.txtSector.ReadOnly = true;
             this.txtSector.Size = new System.Drawing.Size(246, 20);
-            this.txtSector.TabIndex = 42;
+            this.txtSector.TabIndex = 44;
             // 
             // lblSector
             // 
             this.lblSector.AutoSize = true;
-            this.lblSector.Location = new System.Drawing.Point(6, 376);
+            this.lblSector.Location = new System.Drawing.Point(5, 327);
             this.lblSector.Name = "lblSector";
-            this.lblSector.Size = new System.Drawing.Size(30, 13);
-            this.lblSector.TabIndex = 41;
-            this.lblSector.Text = "Title:";
-            // 
-            // txtGrade
-            // 
-            this.txtGrade.Location = new System.Drawing.Point(118, 401);
-            this.txtGrade.Name = "txtGrade";
-            this.txtGrade.ReadOnly = true;
-            this.txtGrade.Size = new System.Drawing.Size(246, 20);
-            this.txtGrade.TabIndex = 44;
-            // 
-            // lblGrade
-            // 
-            this.lblGrade.AutoSize = true;
-            this.lblGrade.Location = new System.Drawing.Point(6, 402);
-            this.lblGrade.Name = "lblGrade";
-            this.lblGrade.Size = new System.Drawing.Size(39, 13);
-            this.lblGrade.TabIndex = 43;
-            this.lblGrade.Text = "Grade:";
+            this.lblSector.Size = new System.Drawing.Size(41, 13);
+            this.lblSector.TabIndex = 43;
+            this.lblSector.Text = "Sector:";
             // 
             // PossibleDuplicateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.txtGrade);
-            this.Controls.Add(this.lblGrade);
             this.Controls.Add(this.txtSector);
             this.Controls.Add(this.lblSector);
+            this.Controls.Add(this.txtEmploymentStatus);
+            this.Controls.Add(this.lblEmploymentStatus);
             this.Controls.Add(this.txtCallTime);
             this.Controls.Add(this.lblCallTime);
             this.Controls.Add(this.txtCreatedDate);
@@ -696,8 +677,6 @@
             this.Controls.Add(this.cbPhone2Match);
             this.Controls.Add(this.cbPhone1Match);
             this.Controls.Add(this.lblPossibleDuplicateOnHeader);
-            this.Controls.Add(this.txtAreaOfEmployment);
-            this.Controls.Add(this.lblAreaOfEmployment);
             this.Controls.Add(this.txtComments);
             this.Controls.Add(this.txtCITY);
             this.Controls.Add(this.txtCOUNTRY);
@@ -728,7 +707,7 @@
             this.Controls.Add(this.lblDear);
             this.Controls.Add(this.lblId);
             this.Name = "PossibleDuplicateDetails";
-            this.Size = new System.Drawing.Size(899, 733);
+            this.Size = new System.Drawing.Size(899, 709);
             this.gbRepExtraDetails.ResumeLayout(false);
             this.gbRepExtraDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -782,8 +761,6 @@
         private System.Windows.Forms.CheckBox cbRapidRefund;
         private System.Windows.Forms.CheckBox cbVIP;
         private System.Windows.Forms.CheckBox cbFullyQualified;
-        private System.Windows.Forms.TextBox txtAreaOfEmployment;
-        private System.Windows.Forms.Label lblAreaOfEmployment;
         private System.Windows.Forms.CheckBox cbPostCodeMatch;
         private System.Windows.Forms.CheckBox cbEmailMatch;
         private System.Windows.Forms.CheckBox cbPhone2Match;
@@ -797,9 +774,9 @@
         private System.Windows.Forms.Label lblCreatedDate;
         private System.Windows.Forms.TextBox txtCallTime;
         private System.Windows.Forms.Label lblCallTime;
+        private System.Windows.Forms.TextBox txtEmploymentStatus;
+        private System.Windows.Forms.Label lblEmploymentStatus;
         private System.Windows.Forms.TextBox txtSector;
         private System.Windows.Forms.Label lblSector;
-        private System.Windows.Forms.TextBox txtGrade;
-        private System.Windows.Forms.Label lblGrade;
     }
 }

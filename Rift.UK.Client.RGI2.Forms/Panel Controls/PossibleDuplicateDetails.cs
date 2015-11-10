@@ -220,11 +220,10 @@ namespace Rift.UK.Client.RGI2.Forms
                 txtSTATE.Text = gMPossibleDuplicate.STATE;
                 txtCOUNTRY.Text = gMPossibleDuplicate.COUNTRY;
                 txtCITY.Text = gMPossibleDuplicate.CITY;
-                txtAreaOfEmployment.Text = gMPossibleDuplicate.TITLE;
                 txtCreatedDate.Text = gMPossibleDuplicate.Created.ToString();
                 txtCallTime.Text = gMPossibleDuplicate.CallTime;
-                txtGrade.Text = gMPossibleDuplicate.TITLE;
                 txtSector.Text = gMPossibleDuplicate.Sector;
+                txtEmploymentStatus.Text = gMPossibleDuplicate.TITLE;
             }
         }
 
@@ -294,15 +293,15 @@ namespace Rift.UK.Client.RGI2.Forms
             txtSTATE.Text = string.Empty;
             txtCOUNTRY.Text = string.Empty;
             txtCITY.Text = string.Empty;
-            txtAreaOfEmployment.Text = string.Empty;
             txtCallTime.Text = string.Empty;
+            txtEmploymentStatus.Text = string.Empty;
             txtSector.Text = string.Empty;
-            txtGrade.Text = string.Empty;
         }
 
         private void HideREPDetailsGroupBoxVisibility()
         {
             gbRepExtraDetails.Visible = false;
         }
+
     }
 }
