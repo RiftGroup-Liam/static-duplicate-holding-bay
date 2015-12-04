@@ -89,6 +89,12 @@
             this.lblEmploymentStatus = new System.Windows.Forms.Label();
             this.txtSector = new System.Windows.Forms.TextBox();
             this.lblSector = new System.Windows.Forms.Label();
+            this.txtSource = new System.Windows.Forms.TextBox();
+            this.lvlSource = new System.Windows.Forms.Label();
+            this.txtCampaign = new System.Windows.Forms.TextBox();
+            this.lblCampaign = new System.Windows.Forms.Label();
+            this.txtMedium = new System.Windows.Forms.TextBox();
+            this.lblMedium = new System.Windows.Forms.Label();
             this.gbRepExtraDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -221,7 +227,7 @@
             // lblFullyQualified
             // 
             this.lblFullyQualified.AutoSize = true;
-            this.lblFullyQualified.Location = new System.Drawing.Point(6, 111);
+            this.lblFullyQualified.Location = new System.Drawing.Point(8, 77);
             this.lblFullyQualified.Name = "lblFullyQualified";
             this.lblFullyQualified.Size = new System.Drawing.Size(75, 13);
             this.lblFullyQualified.TabIndex = 14;
@@ -248,9 +254,9 @@
             this.gbRepExtraDetails.Controls.Add(this.lblNoOfYears);
             this.gbRepExtraDetails.Controls.Add(this.lblTransport);
             this.gbRepExtraDetails.Controls.Add(this.lblFullyQualified);
-            this.gbRepExtraDetails.Location = new System.Drawing.Point(7, 404);
+            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 482);
             this.gbRepExtraDetails.Name = "gbRepExtraDetails";
-            this.gbRepExtraDetails.Size = new System.Drawing.Size(720, 287);
+            this.gbRepExtraDetails.Size = new System.Drawing.Size(720, 235);
             this.gbRepExtraDetails.TabIndex = 15;
             this.gbRepExtraDetails.TabStop = false;
             this.gbRepExtraDetails.Text = "Rep Extra Details";
@@ -259,7 +265,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 57);
+            this.label2.Location = new System.Drawing.Point(8, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 13);
             this.label2.TabIndex = 49;
@@ -267,7 +273,7 @@
             // 
             // txtReceivedDate
             // 
-            this.txtReceivedDate.Location = new System.Drawing.Point(109, 54);
+            this.txtReceivedDate.Location = new System.Drawing.Point(111, 48);
             this.txtReceivedDate.Name = "txtReceivedDate";
             this.txtReceivedDate.ReadOnly = true;
             this.txtReceivedDate.Size = new System.Drawing.Size(246, 20);
@@ -275,7 +281,7 @@
             // 
             // txtRepName
             // 
-            this.txtRepName.Location = new System.Drawing.Point(109, 29);
+            this.txtRepName.Location = new System.Drawing.Point(111, 23);
             this.txtRepName.Name = "txtRepName";
             this.txtRepName.ReadOnly = true;
             this.txtRepName.Size = new System.Drawing.Size(246, 20);
@@ -284,7 +290,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 32);
+            this.label1.Location = new System.Drawing.Point(8, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 46;
@@ -294,7 +300,7 @@
             // 
             this.cbPublicTransport.AutoCheck = false;
             this.cbPublicTransport.AutoSize = true;
-            this.cbPublicTransport.Location = new System.Drawing.Point(225, 134);
+            this.cbPublicTransport.Location = new System.Drawing.Point(227, 100);
             this.cbPublicTransport.Name = "cbPublicTransport";
             this.cbPublicTransport.Size = new System.Drawing.Size(103, 17);
             this.cbPublicTransport.TabIndex = 45;
@@ -306,7 +312,7 @@
             // 
             this.cbPrivateCar.AutoCheck = false;
             this.cbPrivateCar.AutoSize = true;
-            this.cbPrivateCar.Location = new System.Drawing.Point(109, 134);
+            this.cbPrivateCar.Location = new System.Drawing.Point(111, 100);
             this.cbPrivateCar.Name = "cbPrivateCar";
             this.cbPrivateCar.Size = new System.Drawing.Size(97, 17);
             this.cbPrivateCar.TabIndex = 44;
@@ -318,7 +324,7 @@
             // 
             this.cbRapidRefund.AutoCheck = false;
             this.cbRapidRefund.AutoSize = true;
-            this.cbRapidRefund.Location = new System.Drawing.Point(109, 201);
+            this.cbRapidRefund.Location = new System.Drawing.Point(111, 167);
             this.cbRapidRefund.Name = "cbRapidRefund";
             this.cbRapidRefund.Size = new System.Drawing.Size(15, 14);
             this.cbRapidRefund.TabIndex = 43;
@@ -329,7 +335,7 @@
             // 
             this.cbVIP.AutoCheck = false;
             this.cbVIP.AutoSize = true;
-            this.cbVIP.Location = new System.Drawing.Point(109, 179);
+            this.cbVIP.Location = new System.Drawing.Point(111, 145);
             this.cbVIP.Name = "cbVIP";
             this.cbVIP.Size = new System.Drawing.Size(15, 14);
             this.cbVIP.TabIndex = 42;
@@ -340,7 +346,7 @@
             // 
             this.cbFullyQualified.AutoCheck = false;
             this.cbFullyQualified.AutoSize = true;
-            this.cbFullyQualified.Location = new System.Drawing.Point(109, 109);
+            this.cbFullyQualified.Location = new System.Drawing.Point(111, 75);
             this.cbFullyQualified.Name = "cbFullyQualified";
             this.cbFullyQualified.Size = new System.Drawing.Size(15, 14);
             this.cbFullyQualified.TabIndex = 41;
@@ -349,7 +355,7 @@
             // 
             // txtUCUREmployer
             // 
-            this.txtUCUREmployer.Location = new System.Drawing.Point(109, 245);
+            this.txtUCUREmployer.Location = new System.Drawing.Point(111, 211);
             this.txtUCUREmployer.Name = "txtUCUREmployer";
             this.txtUCUREmployer.ReadOnly = true;
             this.txtUCUREmployer.Size = new System.Drawing.Size(246, 20);
@@ -357,7 +363,7 @@
             // 
             // txtUCURSITE
             // 
-            this.txtUCURSITE.Location = new System.Drawing.Point(109, 222);
+            this.txtUCURSITE.Location = new System.Drawing.Point(111, 188);
             this.txtUCURSITE.Name = "txtUCURSITE";
             this.txtUCURSITE.ReadOnly = true;
             this.txtUCURSITE.Size = new System.Drawing.Size(246, 20);
@@ -365,7 +371,7 @@
             // 
             // txtNoOfYears
             // 
-            this.txtNoOfYears.Location = new System.Drawing.Point(109, 154);
+            this.txtNoOfYears.Location = new System.Drawing.Point(111, 120);
             this.txtNoOfYears.Name = "txtNoOfYears";
             this.txtNoOfYears.ReadOnly = true;
             this.txtNoOfYears.Size = new System.Drawing.Size(246, 20);
@@ -374,7 +380,7 @@
             // lblCurrentEmployer
             // 
             this.lblCurrentEmployer.AutoSize = true;
-            this.lblCurrentEmployer.Location = new System.Drawing.Point(6, 248);
+            this.lblCurrentEmployer.Location = new System.Drawing.Point(8, 214);
             this.lblCurrentEmployer.Name = "lblCurrentEmployer";
             this.lblCurrentEmployer.Size = new System.Drawing.Size(90, 13);
             this.lblCurrentEmployer.TabIndex = 20;
@@ -383,7 +389,7 @@
             // lblCurrentSite
             // 
             this.lblCurrentSite.AutoSize = true;
-            this.lblCurrentSite.Location = new System.Drawing.Point(6, 225);
+            this.lblCurrentSite.Location = new System.Drawing.Point(8, 191);
             this.lblCurrentSite.Name = "lblCurrentSite";
             this.lblCurrentSite.Size = new System.Drawing.Size(65, 13);
             this.lblCurrentSite.TabIndex = 19;
@@ -392,7 +398,7 @@
             // lblRapidRefund
             // 
             this.lblRapidRefund.AutoSize = true;
-            this.lblRapidRefund.Location = new System.Drawing.Point(6, 201);
+            this.lblRapidRefund.Location = new System.Drawing.Point(8, 167);
             this.lblRapidRefund.Name = "lblRapidRefund";
             this.lblRapidRefund.Size = new System.Drawing.Size(76, 13);
             this.lblRapidRefund.TabIndex = 18;
@@ -401,7 +407,7 @@
             // lblVIP
             // 
             this.lblVIP.AutoSize = true;
-            this.lblVIP.Location = new System.Drawing.Point(6, 179);
+            this.lblVIP.Location = new System.Drawing.Point(8, 145);
             this.lblVIP.Name = "lblVIP";
             this.lblVIP.Size = new System.Drawing.Size(27, 13);
             this.lblVIP.TabIndex = 17;
@@ -410,7 +416,7 @@
             // lblNoOfYears
             // 
             this.lblNoOfYears.AutoSize = true;
-            this.lblNoOfYears.Location = new System.Drawing.Point(6, 157);
+            this.lblNoOfYears.Location = new System.Drawing.Point(8, 123);
             this.lblNoOfYears.Name = "lblNoOfYears";
             this.lblNoOfYears.Size = new System.Drawing.Size(89, 13);
             this.lblNoOfYears.TabIndex = 16;
@@ -419,7 +425,7 @@
             // lblTransport
             // 
             this.lblTransport.AutoSize = true;
-            this.lblTransport.Location = new System.Drawing.Point(6, 134);
+            this.lblTransport.Location = new System.Drawing.Point(8, 100);
             this.lblTransport.Name = "lblTransport";
             this.lblTransport.Size = new System.Drawing.Size(55, 13);
             this.lblTransport.TabIndex = 15;
@@ -660,10 +666,67 @@
             this.lblSector.TabIndex = 43;
             this.lblSector.Text = "Sector:";
             // 
+            // txtSource
+            // 
+            this.txtSource.Location = new System.Drawing.Point(118, 404);
+            this.txtSource.Name = "txtSource";
+            this.txtSource.ReadOnly = true;
+            this.txtSource.Size = new System.Drawing.Size(246, 20);
+            this.txtSource.TabIndex = 50;
+            // 
+            // lvlSource
+            // 
+            this.lvlSource.AutoSize = true;
+            this.lvlSource.Location = new System.Drawing.Point(6, 405);
+            this.lvlSource.Name = "lvlSource";
+            this.lvlSource.Size = new System.Drawing.Size(44, 13);
+            this.lvlSource.TabIndex = 49;
+            this.lvlSource.Text = "Source:";
+            // 
+            // txtCampaign
+            // 
+            this.txtCampaign.Location = new System.Drawing.Point(119, 456);
+            this.txtCampaign.Name = "txtCampaign";
+            this.txtCampaign.ReadOnly = true;
+            this.txtCampaign.Size = new System.Drawing.Size(246, 20);
+            this.txtCampaign.TabIndex = 48;
+            // 
+            // lblCampaign
+            // 
+            this.lblCampaign.AutoSize = true;
+            this.lblCampaign.Location = new System.Drawing.Point(7, 457);
+            this.lblCampaign.Name = "lblCampaign";
+            this.lblCampaign.Size = new System.Drawing.Size(57, 13);
+            this.lblCampaign.TabIndex = 47;
+            this.lblCampaign.Text = "Campaign:";
+            // 
+            // txtMedium
+            // 
+            this.txtMedium.Location = new System.Drawing.Point(119, 430);
+            this.txtMedium.Name = "txtMedium";
+            this.txtMedium.ReadOnly = true;
+            this.txtMedium.Size = new System.Drawing.Size(246, 20);
+            this.txtMedium.TabIndex = 46;
+            // 
+            // lblMedium
+            // 
+            this.lblMedium.AutoSize = true;
+            this.lblMedium.Location = new System.Drawing.Point(7, 431);
+            this.lblMedium.Name = "lblMedium";
+            this.lblMedium.Size = new System.Drawing.Size(47, 13);
+            this.lblMedium.TabIndex = 45;
+            this.lblMedium.Text = "Medium:";
+            // 
             // PossibleDuplicateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtSource);
+            this.Controls.Add(this.lvlSource);
+            this.Controls.Add(this.txtCampaign);
+            this.Controls.Add(this.lblCampaign);
+            this.Controls.Add(this.txtMedium);
+            this.Controls.Add(this.lblMedium);
             this.Controls.Add(this.txtSector);
             this.Controls.Add(this.lblSector);
             this.Controls.Add(this.txtEmploymentStatus);
@@ -707,7 +770,7 @@
             this.Controls.Add(this.lblDear);
             this.Controls.Add(this.lblId);
             this.Name = "PossibleDuplicateDetails";
-            this.Size = new System.Drawing.Size(899, 709);
+            this.Size = new System.Drawing.Size(899, 733);
             this.gbRepExtraDetails.ResumeLayout(false);
             this.gbRepExtraDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -778,5 +841,11 @@
         private System.Windows.Forms.Label lblEmploymentStatus;
         private System.Windows.Forms.TextBox txtSector;
         private System.Windows.Forms.Label lblSector;
+        private System.Windows.Forms.TextBox txtSource;
+        private System.Windows.Forms.Label lvlSource;
+        private System.Windows.Forms.TextBox txtCampaign;
+        private System.Windows.Forms.Label lblCampaign;
+        private System.Windows.Forms.TextBox txtMedium;
+        private System.Windows.Forms.Label lblMedium;
     }
 }

@@ -28,7 +28,6 @@ namespace Rift.UK.Client.RGI2.Forms
         void panelControl_OnPossibleDuplicateUpdated(object sender, EventArgs e)
         {
             // display duplicate details
-
             DisplayDuplicateDetails(panelControl.PossibleDuplicate);
         }
 
@@ -224,6 +223,9 @@ namespace Rift.UK.Client.RGI2.Forms
                 txtCallTime.Text = gMPossibleDuplicate.CallTime;
                 txtSector.Text = gMPossibleDuplicate.Sector;
                 txtEmploymentStatus.Text = gMPossibleDuplicate.TITLE;
+                txtSource.Text = gMPossibleDuplicate.NewSource;
+                txtMedium.Text = gMPossibleDuplicate.Medium;
+                txtCampaign.Text = gMPossibleDuplicate.Campaign;
             }
         }
 
@@ -302,6 +304,5 @@ namespace Rift.UK.Client.RGI2.Forms
         {
             gbRepExtraDetails.Visible = false;
         }
-
     }
 }
