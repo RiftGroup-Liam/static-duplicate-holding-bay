@@ -95,6 +95,8 @@
             this.lblCampaign = new System.Windows.Forms.Label();
             this.txtMedium = new System.Windows.Forms.TextBox();
             this.lblMedium = new System.Windows.Forms.Label();
+            this.txtLocation = new System.Windows.Forms.TextBox();
+            this.lblLocation = new System.Windows.Forms.Label();
             this.gbRepExtraDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -254,7 +256,7 @@
             this.gbRepExtraDetails.Controls.Add(this.lblNoOfYears);
             this.gbRepExtraDetails.Controls.Add(this.lblTransport);
             this.gbRepExtraDetails.Controls.Add(this.lblFullyQualified);
-            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 482);
+            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 508);
             this.gbRepExtraDetails.Name = "gbRepExtraDetails";
             this.gbRepExtraDetails.Size = new System.Drawing.Size(720, 235);
             this.gbRepExtraDetails.TabIndex = 15;
@@ -717,10 +719,29 @@
             this.lblMedium.TabIndex = 45;
             this.lblMedium.Text = "Medium:";
             // 
+            // txtLocation
+            // 
+            this.txtLocation.Location = new System.Drawing.Point(120, 482);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.ReadOnly = true;
+            this.txtLocation.Size = new System.Drawing.Size(246, 20);
+            this.txtLocation.TabIndex = 52;
+            // 
+            // lblLocation
+            // 
+            this.lblLocation.AutoSize = true;
+            this.lblLocation.Location = new System.Drawing.Point(8, 483);
+            this.lblLocation.Name = "lblLocation";
+            this.lblLocation.Size = new System.Drawing.Size(51, 13);
+            this.lblLocation.TabIndex = 51;
+            this.lblLocation.Text = "Location:";
+            // 
             // PossibleDuplicateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtLocation);
+            this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.txtSource);
             this.Controls.Add(this.lvlSource);
             this.Controls.Add(this.txtCampaign);
@@ -770,7 +791,7 @@
             this.Controls.Add(this.lblDear);
             this.Controls.Add(this.lblId);
             this.Name = "PossibleDuplicateDetails";
-            this.Size = new System.Drawing.Size(899, 733);
+            this.Size = new System.Drawing.Size(899, 748);
             this.gbRepExtraDetails.ResumeLayout(false);
             this.gbRepExtraDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -847,5 +868,7 @@
         private System.Windows.Forms.Label lblCampaign;
         private System.Windows.Forms.TextBox txtMedium;
         private System.Windows.Forms.Label lblMedium;
+        private System.Windows.Forms.TextBox txtLocation;
+        private System.Windows.Forms.Label lblLocation;
     }
 }
