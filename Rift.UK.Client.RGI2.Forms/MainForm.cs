@@ -66,7 +66,7 @@ namespace Rift.UK.Client.RGI2.Forms
 
         private void DisplayUserDetails(User user)
         {
-            this.Text = "Goldmine Importer Possible Duplicates: V1.04 - " + user.Forename + " " + user.Surname;
+            this.Text = "Goldmine Importer Possible Duplicates: V1.05 - " + user.Forename + " " + user.Surname;
         }
 
         private void AttachEvents()

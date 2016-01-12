@@ -40,7 +40,7 @@
             // 
             // btnImport
             // 
-            this.btnImport.Location = new System.Drawing.Point(983, 624);
+            this.btnImport.Location = new System.Drawing.Point(983, 602);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(134, 23);
             this.btnImport.TabIndex = 3;
@@ -50,17 +50,17 @@
             // 
             // btnCreateHistoryRecord
             // 
-            this.btnCreateHistoryRecord.Location = new System.Drawing.Point(983, 653);
+            this.btnCreateHistoryRecord.Location = new System.Drawing.Point(983, 627);
             this.btnCreateHistoryRecord.Name = "btnCreateHistoryRecord";
-            this.btnCreateHistoryRecord.Size = new System.Drawing.Size(134, 23);
+            this.btnCreateHistoryRecord.Size = new System.Drawing.Size(134, 49);
             this.btnCreateHistoryRecord.TabIndex = 4;
-            this.btnCreateHistoryRecord.Text = "Create History Record";
+            this.btnCreateHistoryRecord.Text = "Create History Record && Update";
             this.btnCreateHistoryRecord.UseVisualStyleBackColor = true;
             this.btnCreateHistoryRecord.Click += new System.EventHandler(this.btnCreateHistoryRecord_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(983, 595);
+            this.btnDelete.Location = new System.Drawing.Point(983, 573);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(134, 23);
             this.btnDelete.TabIndex = 5;
