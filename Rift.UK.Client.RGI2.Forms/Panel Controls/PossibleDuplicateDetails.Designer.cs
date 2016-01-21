@@ -97,6 +97,8 @@
             this.lblMedium = new System.Windows.Forms.Label();
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.lblLocation = new System.Windows.Forms.Label();
+            this.txtJobTitle = new System.Windows.Forms.TextBox();
+            this.lblJobTitle = new System.Windows.Forms.Label();
             this.gbRepExtraDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -256,7 +258,7 @@
             this.gbRepExtraDetails.Controls.Add(this.lblNoOfYears);
             this.gbRepExtraDetails.Controls.Add(this.lblTransport);
             this.gbRepExtraDetails.Controls.Add(this.lblFullyQualified);
-            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 508);
+            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 535);
             this.gbRepExtraDetails.Name = "gbRepExtraDetails";
             this.gbRepExtraDetails.Size = new System.Drawing.Size(720, 235);
             this.gbRepExtraDetails.TabIndex = 15;
@@ -736,10 +738,29 @@
             this.lblLocation.TabIndex = 51;
             this.lblLocation.Text = "Location:";
             // 
+            // txtJobTitle
+            // 
+            this.txtJobTitle.Location = new System.Drawing.Point(120, 509);
+            this.txtJobTitle.Name = "txtJobTitle";
+            this.txtJobTitle.ReadOnly = true;
+            this.txtJobTitle.Size = new System.Drawing.Size(246, 20);
+            this.txtJobTitle.TabIndex = 54;
+            // 
+            // lblJobTitle
+            // 
+            this.lblJobTitle.AutoSize = true;
+            this.lblJobTitle.Location = new System.Drawing.Point(8, 510);
+            this.lblJobTitle.Name = "lblJobTitle";
+            this.lblJobTitle.Size = new System.Drawing.Size(50, 13);
+            this.lblJobTitle.TabIndex = 53;
+            this.lblJobTitle.Text = "Job Title:";
+            // 
             // PossibleDuplicateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtJobTitle);
+            this.Controls.Add(this.lblJobTitle);
             this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.txtSource);
@@ -791,7 +812,7 @@
             this.Controls.Add(this.lblDear);
             this.Controls.Add(this.lblId);
             this.Name = "PossibleDuplicateDetails";
-            this.Size = new System.Drawing.Size(899, 748);
+            this.Size = new System.Drawing.Size(899, 783);
             this.gbRepExtraDetails.ResumeLayout(false);
             this.gbRepExtraDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -870,5 +891,7 @@
         private System.Windows.Forms.Label lblMedium;
         private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.Label lblLocation;
+        private System.Windows.Forms.TextBox txtJobTitle;
+        private System.Windows.Forms.Label lblJobTitle;
     }
 }

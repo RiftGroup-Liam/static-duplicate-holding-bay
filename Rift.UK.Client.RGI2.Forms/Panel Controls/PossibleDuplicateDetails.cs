@@ -227,6 +227,7 @@ namespace Rift.UK.Client.RGI2.Forms
                 txtMedium.Text = gMPossibleDuplicate.Medium;
                 txtCampaign.Text = gMPossibleDuplicate.Campaign;
                 txtLocation.Text = gMPossibleDuplicate.KEY2;
+                txtJobTitle.Text = gMPossibleDuplicate.JobTitle;
             }
         }
 
