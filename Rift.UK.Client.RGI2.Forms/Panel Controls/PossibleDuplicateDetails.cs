@@ -14,15 +14,18 @@ namespace Rift.UK.Client.RGI2.Forms
     public partial class PossibleDuplicateDetails : UserControl
     {
         PossibleDuplicateDetailsControl panelControl;
+        GDPRPreferencesControl gdprPreferencesControl;
         public PossibleDuplicateDetails()
         {
             InitializeComponent();
         }
 
-        public void Init(PossibleDuplicateDetailsControl givenPossibleDuplicateDetailsControl)
+        public void Init(PossibleDuplicateDetailsControl givenPossibleDuplicateDetailsControl, GDPRPreferencesControl givenGDPRPreferencesControl)
         {
             panelControl = givenPossibleDuplicateDetailsControl;
             panelControl.OnPossibleDuplicateUpdated += new PossibleDuplicateDetailsControl.PossibleDuplicateUpdated(panelControl_OnPossibleDuplicateUpdated);
+            gdprPreferencesControl = givenGDPRPreferencesControl;
+            GDPRPreferencesControl.Init(gdprPreferencesControl);
         }
 
         void panelControl_OnPossibleDuplicateUpdated(object sender, EventArgs e)

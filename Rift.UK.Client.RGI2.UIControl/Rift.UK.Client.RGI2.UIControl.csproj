@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="MainFormControl.cs" />
     <Compile Include="Miscellaneous Controls\RiftIdControl.cs" />
+    <Compile Include="Panel UIControls\GDPRPreferencesControl.cs" />
     <Compile Include="Panel UIControls\PossibleDuplicateDetailsControl.cs" />
     <Compile Include="Panel UIControls\PossibleDuplicateListControl.cs" />
     <Compile Include="Panel UIControls\PossibleDuplicateOnControl.cs" />

@@ -72,6 +72,12 @@
     <Compile Include="Miscellaneous Forms\RiftIdForm.Designer.cs">
       <DependentUpon>RiftIdForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panel Controls\GDPRPreferences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel Controls\GDPRPreferences.Designer.cs">
+      <DependentUpon>GDPRPreferences.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panel Controls\PossibleDuplicateDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Miscellaneous Forms\RiftIdForm.resx">
       <DependentUpon>RiftIdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel Controls\GDPRPreferences.resx">
+      <DependentUpon>GDPRPreferences.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel Controls\PossibleDuplicateDetails.resx">
       <DependentUpon>PossibleDuplicateDetails.cs</DependentUpon>

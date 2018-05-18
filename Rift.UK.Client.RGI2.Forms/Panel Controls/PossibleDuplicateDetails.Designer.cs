@@ -99,6 +99,7 @@
             this.lblLocation = new System.Windows.Forms.Label();
             this.txtJobTitle = new System.Windows.Forms.TextBox();
             this.lblJobTitle = new System.Windows.Forms.Label();
+            this.GDPRPreferencesControl = new Rift.UK.Client.RGI2.Forms.Panel_Controls.GDPRPreferences();
             this.gbRepExtraDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -755,10 +756,18 @@
             this.lblJobTitle.TabIndex = 53;
             this.lblJobTitle.Text = "Job Title:";
             // 
+            // GDPRPreferencesControl
+            // 
+            this.GDPRPreferencesControl.Location = new System.Drawing.Point(449, 353);
+            this.GDPRPreferencesControl.Name = "GDPRPreferencesControl";
+            this.GDPRPreferencesControl.Size = new System.Drawing.Size(181, 150);
+            this.GDPRPreferencesControl.TabIndex = 55;
+            // 
             // PossibleDuplicateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.GDPRPreferencesControl);
             this.Controls.Add(this.txtJobTitle);
             this.Controls.Add(this.lblJobTitle);
             this.Controls.Add(this.txtLocation);
@@ -893,5 +902,6 @@
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.TextBox txtJobTitle;
         private System.Windows.Forms.Label lblJobTitle;
+        private Panel_Controls.GDPRPreferences GDPRPreferencesControl;
     }
 }

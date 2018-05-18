@@ -18,6 +18,8 @@ namespace Rift.UK.Client.RGI2.Forms
         PossibleDuplicateDetailsControl possibleDuplicateDetailsControl = new PossibleDuplicateDetailsControl();
         PossibleDuplicateListControl possibleDuplicateListControl = new PossibleDuplicateListControl();
         PossibleDuplicateOnControl possibleDuplicateOnControl = new PossibleDuplicateOnControl();
+        GDPRPreferencesControl gdprControl = new GDPRPreferencesControl();
+
         User user = new User();
 
         GMPossibleDuplicate selectedPossibleDuplicate;
@@ -87,6 +89,7 @@ namespace Rift.UK.Client.RGI2.Forms
             // tell other controls the new selected possibleDuplicate
             possibleDuplicateOnControl.PossibleDuplicate = possibleDuplicateListControl.selectedPossibleDuplicate;
             possibleDuplicateDetailsControl.PossibleDuplicate = possibleDuplicateListControl.selectedPossibleDuplicate;
+            gdprControl.PossibleDuplicate = possibleDuplicateListControl.selectedPossibleDuplicate;
         }
 
         void possibleDuplicateListControl_OnPossibleDuplicatesUpdated(object sender, EventArgs e)
@@ -98,7 +101,7 @@ namespace Rift.UK.Client.RGI2.Forms
         private void InitiatePanels()
         {
             PDList.Init(possibleDuplicateListControl, recordCounter);
-            PDDetails.Init(possibleDuplicateDetailsControl);
+            PDDetails.Init(possibleDuplicateDetailsControl, gdprControl);
             //PDOn.Init(possibleDuplicateOnControl);
         }
 
