@@ -100,6 +100,8 @@
             this.txtJobTitle = new System.Windows.Forms.TextBox();
             this.lblJobTitle = new System.Windows.Forms.Label();
             this.GDPRPreferencesControl = new Rift.UK.Client.RGI2.Forms.Panel_Controls.GDPRPreferences();
+            this.txtCreative = new System.Windows.Forms.TextBox();
+            this.lblCreative = new System.Windows.Forms.Label();
             this.gbRepExtraDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -259,7 +261,7 @@
             this.gbRepExtraDetails.Controls.Add(this.lblNoOfYears);
             this.gbRepExtraDetails.Controls.Add(this.lblTransport);
             this.gbRepExtraDetails.Controls.Add(this.lblFullyQualified);
-            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 535);
+            this.gbRepExtraDetails.Location = new System.Drawing.Point(9, 563);
             this.gbRepExtraDetails.Name = "gbRepExtraDetails";
             this.gbRepExtraDetails.Size = new System.Drawing.Size(720, 235);
             this.gbRepExtraDetails.TabIndex = 15;
@@ -724,7 +726,7 @@
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(120, 482);
+            this.txtLocation.Location = new System.Drawing.Point(120, 509);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.ReadOnly = true;
             this.txtLocation.Size = new System.Drawing.Size(246, 20);
@@ -733,7 +735,7 @@
             // lblLocation
             // 
             this.lblLocation.AutoSize = true;
-            this.lblLocation.Location = new System.Drawing.Point(8, 483);
+            this.lblLocation.Location = new System.Drawing.Point(8, 510);
             this.lblLocation.Name = "lblLocation";
             this.lblLocation.Size = new System.Drawing.Size(51, 13);
             this.lblLocation.TabIndex = 51;
@@ -741,7 +743,7 @@
             // 
             // txtJobTitle
             // 
-            this.txtJobTitle.Location = new System.Drawing.Point(120, 509);
+            this.txtJobTitle.Location = new System.Drawing.Point(120, 536);
             this.txtJobTitle.Name = "txtJobTitle";
             this.txtJobTitle.ReadOnly = true;
             this.txtJobTitle.Size = new System.Drawing.Size(246, 20);
@@ -750,7 +752,7 @@
             // lblJobTitle
             // 
             this.lblJobTitle.AutoSize = true;
-            this.lblJobTitle.Location = new System.Drawing.Point(8, 510);
+            this.lblJobTitle.Location = new System.Drawing.Point(8, 537);
             this.lblJobTitle.Name = "lblJobTitle";
             this.lblJobTitle.Size = new System.Drawing.Size(50, 13);
             this.lblJobTitle.TabIndex = 53;
@@ -763,10 +765,29 @@
             this.GDPRPreferencesControl.Size = new System.Drawing.Size(181, 150);
             this.GDPRPreferencesControl.TabIndex = 55;
             // 
+            // txtCreative
+            // 
+            this.txtCreative.Location = new System.Drawing.Point(119, 483);
+            this.txtCreative.Name = "txtCreative";
+            this.txtCreative.ReadOnly = true;
+            this.txtCreative.Size = new System.Drawing.Size(246, 20);
+            this.txtCreative.TabIndex = 57;
+            // 
+            // lblCreative
+            // 
+            this.lblCreative.AutoSize = true;
+            this.lblCreative.Location = new System.Drawing.Point(7, 484);
+            this.lblCreative.Name = "lblCreative";
+            this.lblCreative.Size = new System.Drawing.Size(49, 13);
+            this.lblCreative.TabIndex = 56;
+            this.lblCreative.Text = "Creative:";
+            // 
             // PossibleDuplicateDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtCreative);
+            this.Controls.Add(this.lblCreative);
             this.Controls.Add(this.GDPRPreferencesControl);
             this.Controls.Add(this.txtJobTitle);
             this.Controls.Add(this.lblJobTitle);
@@ -821,7 +842,7 @@
             this.Controls.Add(this.lblDear);
             this.Controls.Add(this.lblId);
             this.Name = "PossibleDuplicateDetails";
-            this.Size = new System.Drawing.Size(899, 783);
+            this.Size = new System.Drawing.Size(899, 813);
             this.gbRepExtraDetails.ResumeLayout(false);
             this.gbRepExtraDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -903,5 +924,7 @@
         private System.Windows.Forms.TextBox txtJobTitle;
         private System.Windows.Forms.Label lblJobTitle;
         private Panel_Controls.GDPRPreferences GDPRPreferencesControl;
+        private System.Windows.Forms.TextBox txtCreative;
+        private System.Windows.Forms.Label lblCreative;
     }
 }
